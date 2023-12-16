@@ -1,0 +1,67 @@
+// testbench for 4-tap, 16-bit, averaging FIR filter
+// ECE260A Project assignment   2019
+module project_tb2_u;
+  parameter           w = 4;
+  logic               clk = 'b0,			          
+                      reset = 'b1;	  // active high
+  logic  [w-1:0] a; 	              // unsigned operands
+  wire   [w+1:0] s;                   // sum output from DUT
+  wire signed[w+2:0] dif1, dif2;
+  logic	 [w+1:0] s_b1, s_b2;		          // "golden" sum output
+  logic  [w-1:0] ar, 
+                br,
+                cr,
+                dr;	               // pipeline in testbench	
+  logic [w  :0] sum1;
+  logic [w+1:0] sum3, sum2, sum;              			 ;
+
+// choose "tree" or "cascade" topology
+  fir4rca_cas_u #(.w(w)) f1(.*);
+//  fir4rca_u #(.w(w)) f1(.*);
+
+  always begin
+    #5ns clk = 'b1;
+	#5ns clk = 'b0;
+  end
+
+// series of 25 sets of random operands
+  initial begin
+    $display("a   s  s_b  diff");
+    #10ns reset = '0;
+	for(int i = 0; i < 25; i++) begin
+	  a   = $random;// 2**(i/4);//$random;
+	  #8ns $displayh(a,,,,,s,,,,s_b1,,,,dif1,,,,s_b2,,,dif2);
+	  if(dif1) $displayh(f1.rc1,,f1.rc2,,,sum1,,sum2);
+	  #2ns;
+	end  
+    #50ns $stop;
+  end
+
+  assign sum1 = ar+br;
+  assign sum2 = sum1 + cr;
+  assign sum3 = sum2 + dr;
+
+  always @(posedge clk) 
+    if(reset) begin :rst
+	  ar  <= 'b0;
+	  br  <= 'b0;
+	  cr  <= 'b0;
+	  dr  <= 'b0;
+	  s_b1<= 'b0;
+	  s_b2<= 'b0;
+	end  :rst
+	else begin :run
+      ar  <= a;						  // match DUT's input pipe reg. delay
+      br  <= ar;
+      cr  <= br;
+      dr  <= cr;
+	  s_b1 <= sum3;		  // match DUT's output pipe reg. delay
+      s_b2 <= ar+br+cr+dr;
+    end :run
+
+  assign dif1 = s - s_b1;				  // difference between golden and DUT
+  assign dif2 = s - s_b2;
+endmodule
+
+
+

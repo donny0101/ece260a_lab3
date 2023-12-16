@@ -1,0 +1,2433 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nets
+        -max_paths 100
+        -transition_time
+        -capacitance
+Design : fir4_optimized
+Version: K-2015.06-SP2
+Date   : Wed Dec 13 17:26:07 2023
+****************************************
+
+Operating Conditions: WCCOM   Library: tcbn65gpluswc
+Wire Load Model Mode: segmented
+
+  Startpoint: ar_reg_10_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: s_reg_15_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  ar_reg_10_/CP (DFQD1)                             0.000     0.000      0.000 r
+  ar_reg_10_/Q (DFQD1)                              0.039     0.138      0.138 f
+  ar[10] (net)                   5        0.005               0.000      0.138 f
+  U275/ZN (INVD0)                                   0.059     0.046      0.184 r
+  n209 (net)                     3        0.003               0.000      0.184 r
+  U178/ZN (ND2D1)                                   0.036     0.036      0.220 f
+  n189 (net)                     2        0.002               0.000      0.220 f
+  U226/ZN (CKND2D0)                                 0.072     0.051      0.271 r
+  n127 (net)                     2        0.002               0.000      0.271 r
+  U184/ZN (ND2D1)                                   0.030     0.037      0.307 f
+  n114 (net)                     1        0.001               0.000      0.307 f
+  U124/ZN (OAI21D1)                                 0.068     0.048      0.355 r
+  n115 (net)                     1        0.002               0.000      0.355 r
+  U376/ZN (NR2D2)                                   0.030     0.033      0.388 f
+  n149 (net)                     4        0.006               0.000      0.388 f
+  U399/ZN (ND2D2)                                   0.027     0.023      0.411 r
+  n164 (net)                     2        0.003               0.000      0.411 r
+  U401/ZN (OAI211D2)                                0.053     0.031      0.442 f
+  n165 (net)                     1        0.002               0.000      0.442 f
+  U402/ZN (NR2XD1)                                  0.029     0.026      0.468 r
+  N50 (net)                      1        0.001               0.000      0.468 r
+  s_reg_15_/D (DFQD2)                               0.029     0.000      0.468 r
+  data arrival time                                                      0.468
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  s_reg_15_/CP (DFQD2)                                        0.000      0.500 r
+  library setup time                                         -0.032      0.468
+  data required time                                                     0.468
+  -------------------------------------------------------------------------------
+  data required time                                                     0.468
+  data arrival time                                                     -0.468
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.000
+
+
+  Startpoint: br_reg_9_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: s_reg_13_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  br_reg_9_/CP (DFQD1)                              0.000     0.000      0.000 r
+  br_reg_9_/Q (DFQD1)                               0.036     0.136      0.136 f
+  br[9] (net)                    5        0.005               0.000      0.136 f
+  U362/ZN (OAI21D1)                                 0.047     0.038      0.174 r
+  n94 (net)                      1        0.001               0.000      0.174 r
+  U364/ZN (NR2D1)                                   0.024     0.027      0.200 f
+  n99 (net)                      2        0.003               0.000      0.200 f
+  U368/ZN (NR2D1)                                   0.103     0.070      0.270 r
+  n188 (net)                     4        0.005               0.000      0.270 r
+  U385/ZN (ND2D1)                                   0.046     0.046      0.317 f
+  n129 (net)                     1        0.002               0.000      0.317 f
+  U387/ZN (ND2D2)                                   0.031     0.030      0.346 r
+  n276 (net)                     4        0.005               0.000      0.346 r
+  U395/ZN (NR2D1)                                   0.017     0.019      0.366 f
+  n142 (net)                     1        0.001               0.000      0.366 f
+  U397/ZN (OAI21D1)                                 0.047     0.034      0.399 r
+  n143 (net)                     1        0.001               0.000      0.399 r
+  U398/ZN (ND2D1)                                   0.038     0.030      0.430 f
+  n145 (net)                     1        0.001               0.000      0.430 f
+  U130/ZN (NR2XD0)                                  0.038     0.036      0.466 r
+  N48 (net)                      1        0.001               0.000      0.466 r
+  s_reg_13_/D (DFQD2)                               0.038     0.000      0.466 r
+  data arrival time                                                      0.466
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  s_reg_13_/CP (DFQD2)                                        0.000      0.500 r
+  library setup time                                         -0.034      0.466
+  data required time                                                     0.466
+  -------------------------------------------------------------------------------
+  data required time                                                     0.466
+  data arrival time                                                     -0.466
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.000
+
+
+  Startpoint: br_reg_10_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: s_reg_16_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  br_reg_10_/CP (DFQD1)                             0.000     0.000      0.000 r
+  br_reg_10_/Q (DFQD1)                              0.054     0.123      0.123 r
+  br[10] (net)                   5        0.005               0.000      0.123 r
+  U359/ZN (ND2D1)                                   0.039     0.039      0.162 f
+  n190 (net)                     3        0.002               0.000      0.162 f
+  U228/ZN (NR2D0)                                   0.092     0.065      0.227 r
+  n102 (net)                     1        0.002               0.000      0.227 r
+  U133/ZN (NR2XD1)                                  0.042     0.049      0.276 f
+  n279 (net)                     4        0.004               0.000      0.276 f
+  U371/ZN (ND2D1)                                   0.024     0.025      0.301 r
+  n106 (net)                     1        0.001               0.000      0.301 r
+  U372/ZN (NR2D1)                                   0.020     0.020      0.321 f
+  n116 (net)                     1        0.002               0.000      0.321 f
+  U376/ZN (NR2D2)                                   0.066     0.044      0.366 r
+  n149 (net)                     4        0.006               0.000      0.366 r
+  U377/ZN (ND3D1)                                   0.047     0.049      0.415 f
+  n119 (net)                     1        0.001               0.000      0.415 f
+  U379/ZN (IAO22D1)                                 0.051     0.047      0.462 r
+  n335 (net)                     1        0.001               0.000      0.462 r
+  s_reg_16_/D (DFQD2)                               0.051     0.000      0.462 r
+  data arrival time                                                      0.462
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  s_reg_16_/CP (DFQD2)                                        0.000      0.500 r
+  library setup time                                         -0.037      0.463
+  data required time                                                     0.463
+  -------------------------------------------------------------------------------
+  data required time                                                     0.463
+  data arrival time                                                     -0.462
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.001
+
+
+  Startpoint: br_reg_1_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: s_reg_7_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  br_reg_1_/CP (DFQD2)                              0.000     0.000      0.000 r
+  br_reg_1_/Q (DFQD2)                               0.030     0.137      0.137 f
+  br[1] (net)                    4        0.006               0.000      0.137 f
+  U410/ZN (INVD1)                                   0.020     0.020      0.158 r
+  n179 (net)                     1        0.001               0.000      0.158 r
+  U411/ZN (ND2D1)                                   0.029     0.027      0.185 f
+  n230 (net)                     2        0.002               0.000      0.185 f
+  U272/ZN (CKND2D0)                                 0.064     0.044      0.229 r
+  n320 (net)                     2        0.002               0.000      0.229 r
+  U187/ZN (INVD1)                                   0.030     0.032      0.261 f
+  n248 (net)                     2        0.003               0.000      0.261 f
+  U263/ZN (NR3D0)                                   0.097     0.062      0.323 r
+  n255 (net)                     1        0.002               0.000      0.323 r
+  U188/ZN (NR2D2)                                   0.035     0.028      0.351 f
+  n290 (net)                     3        0.003               0.000      0.351 f
+  U427/ZN (NR2D1)                                   0.064     0.046      0.397 r
+  n294 (net)                     2        0.002               0.000      0.397 r
+  U428/ZN (OAI21D1)                                 0.032     0.033      0.430 f
+  n302 (net)                     1        0.001               0.000      0.430 f
+  U430/ZN (NR2D1)                                   0.041     0.034      0.464 r
+  N42 (net)                      1        0.001               0.000      0.464 r
+  s_reg_7_/D (DFQD2)                                0.041     0.000      0.464 r
+  data arrival time                                                      0.464
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  s_reg_7_/CP (DFQD2)                                         0.000      0.500 r
+  library setup time                                         -0.035      0.465
+  data required time                                                     0.465
+  -------------------------------------------------------------------------------
+  data required time                                                     0.465
+  data arrival time                                                     -0.464
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.001
+
+
+  Startpoint: br_reg_1_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: s_reg_4_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  br_reg_1_/CP (DFQD2)                              0.000     0.000      0.000 r
+  br_reg_1_/Q (DFQD2)                               0.030     0.137      0.137 f
+  br[1] (net)                    4        0.006               0.000      0.137 f
+  U410/ZN (INVD1)                                   0.020     0.020      0.158 r
+  n179 (net)                     1        0.001               0.000      0.158 r
+  U411/ZN (ND2D1)                                   0.029     0.027      0.185 f
+  n230 (net)                     2        0.002               0.000      0.185 f
+  U272/ZN (CKND2D0)                                 0.064     0.044      0.229 r
+  n320 (net)                     2        0.002               0.000      0.229 r
+  U187/ZN (INVD1)                                   0.030     0.032      0.261 f
+  n248 (net)                     2        0.003               0.000      0.261 f
+  U180/ZN (OAI21D2)                                 0.053     0.039      0.300 r
+  n234 (net)                     3        0.003               0.000      0.300 r
+  U181/ZN (ND2D1)                                   0.034     0.035      0.335 f
+  n181 (net)                     2        0.002               0.000      0.335 f
+  U128/Z (OR2D1)                                    0.029     0.059      0.393 f
+  n69 (net)                      1        0.002               0.000      0.393 f
+  U414/ZN (ND2D2)                                   0.030     0.025      0.418 r
+  n184 (net)                     2        0.003               0.000      0.418 r
+  U415/ZN (ND2D2)                                   0.023     0.019      0.437 f
+  n183 (net)                     1        0.001               0.000      0.437 f
+  U129/ZN (OAI21D1)                                 0.046     0.026      0.463 r
+  N39 (net)                      1        0.001               0.000      0.463 r
+  s_reg_4_/D (DFQD2)                                0.046     0.000      0.463 r
+  data arrival time                                                      0.463
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  s_reg_4_/CP (DFQD2)                                         0.000      0.500 r
+  library setup time                                         -0.036      0.464
+  data required time                                                     0.464
+  -------------------------------------------------------------------------------
+  data required time                                                     0.464
+  data arrival time                                                     -0.463
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.001
+
+
+  Startpoint: br_reg_1_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: s_reg_8_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  br_reg_1_/CP (DFQD2)                              0.000     0.000      0.000 r
+  br_reg_1_/Q (DFQD2)                               0.030     0.137      0.137 f
+  br[1] (net)                    4        0.006               0.000      0.137 f
+  U207/ZN (NR2D1)                                   0.074     0.052      0.189 r
+  n324 (net)                     2        0.003               0.000      0.189 r
+  U186/ZN (OAI211D2)                                0.052     0.050      0.239 f
+  n82 (net)                      1        0.002               0.000      0.239 f
+  U185/ZN (AOI21D2)                                 0.060     0.044      0.283 r
+  n166 (net)                     2        0.003               0.000      0.283 r
+  U403/ZN (ND2D2)                                   0.037     0.036      0.319 f
+  n187 (net)                     3        0.004               0.000      0.319 f
+  U176/ZN (ND3D0)                                   0.046     0.035      0.354 r
+  n170 (net)                     1        0.001               0.000      0.354 r
+  U172/ZN (INVD1)                                   0.022     0.025      0.379 f
+  n171 (net)                     1        0.002               0.000      0.379 f
+  U406/ZN (NR2D2)                                   0.046     0.039      0.417 r
+  n174 (net)                     2        0.003               0.000      0.417 r
+  U167/ZN (ND2D1)                                   0.028     0.029      0.447 f
+  n177 (net)                     1        0.001               0.000      0.447 f
+  U409/ZN (ND2D1)                                   0.024     0.021      0.468 r
+  N43 (net)                      1        0.001               0.000      0.468 r
+  s_reg_8_/D (DFQD2)                                0.024     0.000      0.468 r
+  data arrival time                                                      0.468
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  s_reg_8_/CP (DFQD2)                                         0.000      0.500 r
+  library setup time                                         -0.030      0.470
+  data required time                                                     0.470
+  -------------------------------------------------------------------------------
+  data required time                                                     0.470
+  data arrival time                                                     -0.468
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.002
+
+
+  Startpoint: ar_reg_6_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: s_reg_11_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  ar_reg_6_/CP (DFQD1)                              0.000     0.000      0.000 r
+  ar_reg_6_/Q (DFQD1)                               0.043     0.140      0.140 f
+  ar[6] (net)                    5        0.006               0.000      0.140 f
+  U168/ZN (ND2D2)                                   0.026     0.028      0.168 r
+  n292 (net)                     3        0.003               0.000      0.168 r
+  U365/ZN (AOI21D1)                                 0.050     0.038      0.206 f
+  n132 (net)                     2        0.004               0.000      0.206 f
+  U388/ZN (NR2D2)                                   0.060     0.048      0.254 r
+  n168 (net)                     3        0.005               0.000      0.254 r
+  U121/ZN (ND2D1)                                   0.046     0.043      0.297 f
+  n186 (net)                     3        0.003               0.000      0.297 f
+  U325/Z (AN2XD1)                                   0.020     0.044      0.341 f
+  n77 (net)                      1        0.002               0.000      0.341 f
+  U183/ZN (ND2D2)                                   0.026     0.020      0.361 r
+  n273 (net)                     3        0.003               0.000      0.361 r
+  U182/ZN (ND2D1)                                   0.049     0.033      0.394 f
+  n198 (net)                     2        0.002               0.000      0.394 f
+  U416/ZN (INVD1)                                   0.024     0.025      0.418 r
+  n201 (net)                     1        0.001               0.000      0.418 r
+  U420/ZN (IAO21D2)                                 0.029     0.048      0.467 r
+  N46 (net)                      1        0.001               0.000      0.467 r
+  s_reg_11_/D (DFQD2)                               0.029     0.000      0.467 r
+  data arrival time                                                      0.467
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  s_reg_11_/CP (DFQD2)                                        0.000      0.500 r
+  library setup time                                         -0.032      0.468
+  data required time                                                     0.468
+  -------------------------------------------------------------------------------
+  data required time                                                     0.468
+  data arrival time                                                     -0.467
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.002
+
+
+  Startpoint: br_reg_1_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: s_reg_14_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  br_reg_1_/CP (DFQD2)                              0.000     0.000      0.000 r
+  br_reg_1_/Q (DFQD2)                               0.030     0.137      0.137 f
+  br[1] (net)                    4        0.006               0.000      0.137 f
+  U207/ZN (NR2D1)                                   0.074     0.052      0.189 r
+  n324 (net)                     2        0.003               0.000      0.189 r
+  U186/ZN (OAI211D2)                                0.052     0.050      0.239 f
+  n82 (net)                      1        0.002               0.000      0.239 f
+  U185/ZN (AOI21D2)                                 0.060     0.044      0.283 r
+  n166 (net)                     2        0.003               0.000      0.283 r
+  U177/ZN (INVD0)                                   0.034     0.036      0.319 f
+  n88 (net)                      1        0.002               0.000      0.319 f
+  U352/ZN (ND2D2)                                   0.032     0.027      0.346 r
+  n278 (net)                     4        0.005               0.000      0.346 r
+  U367/ZN (ND2D2)                                   0.043     0.033      0.379 f
+  n148 (net)                     4        0.006               0.000      0.379 f
+  U209/ZN (INVD0)                                   0.034     0.033      0.412 r
+  n121 (net)                     1        0.001               0.000      0.412 r
+  U381/ZN (NR2D1)                                   0.019     0.020      0.432 f
+  n125 (net)                     1        0.002               0.000      0.432 f
+  U384/ZN (NR3D1)                                   0.047     0.030      0.462 r
+  N49 (net)                      1        0.001               0.000      0.462 r
+  s_reg_14_/D (DFQD2)                               0.047     0.000      0.462 r
+  data arrival time                                                      0.462
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  s_reg_14_/CP (DFQD2)                                        0.000      0.500 r
+  library setup time                                         -0.036      0.464
+  data required time                                                     0.464
+  -------------------------------------------------------------------------------
+  data required time                                                     0.464
+  data arrival time                                                     -0.462
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.002
+
+
+  Startpoint: ar_reg_3_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: s_reg_12_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  ar_reg_3_/CP (DFQD1)                              0.000     0.000      0.000 r
+  ar_reg_3_/Q (DFQD1)                               0.040     0.114      0.114 r
+  ar[3] (net)                    4        0.003               0.000      0.114 r
+  U231/ZN (NR2D0)                                   0.023     0.026      0.141 f
+  n80 (net)                      1        0.001               0.000      0.141 f
+  U341/ZN (NR2D1)                                   0.108     0.072      0.213 r
+  n253 (net)                     3        0.005               0.000      0.213 r
+  U185/ZN (AOI21D2)                                 0.039     0.045      0.258 f
+  n166 (net)                     2        0.003               0.000      0.258 f
+  U177/ZN (INVD0)                                   0.048     0.040      0.297 r
+  n88 (net)                      1        0.002               0.000      0.297 r
+  U352/ZN (ND2D2)                                   0.035     0.034      0.331 f
+  n278 (net)                     4        0.005               0.000      0.331 f
+  U423/ZN (AOI21D1)                                 0.065     0.043      0.374 r
+  n284 (net)                     2        0.002               0.000      0.374 r
+  U424/ZN (OAI211D1)                                0.058     0.047      0.421 f
+  n288 (net)                     1        0.001               0.000      0.421 f
+  U426/ZN (NR2D1)                                   0.045     0.040      0.461 r
+  N47 (net)                      1        0.001               0.000      0.461 r
+  s_reg_12_/D (DFQD2)                               0.045     0.000      0.461 r
+  data arrival time                                                      0.461
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  s_reg_12_/CP (DFQD2)                                        0.000      0.500 r
+  library setup time                                         -0.035      0.465
+  data required time                                                     0.465
+  -------------------------------------------------------------------------------
+  data required time                                                     0.465
+  data arrival time                                                     -0.461
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.003
+
+
+  Startpoint: br_reg_1_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: s_reg_9_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  br_reg_1_/CP (DFQD2)                              0.000     0.000      0.000 r
+  br_reg_1_/Q (DFQD2)                               0.030     0.137      0.137 f
+  br[1] (net)                    4        0.006               0.000      0.137 f
+  U207/ZN (NR2D1)                                   0.074     0.052      0.189 r
+  n324 (net)                     2        0.003               0.000      0.189 r
+  U186/ZN (OAI211D2)                                0.052     0.050      0.239 f
+  n82 (net)                      1        0.002               0.000      0.239 f
+  U185/ZN (AOI21D2)                                 0.060     0.044      0.283 r
+  n166 (net)                     2        0.003               0.000      0.283 r
+  U403/ZN (ND2D2)                                   0.037     0.036      0.319 f
+  n187 (net)                     3        0.004               0.000      0.319 f
+  U404/ZN (ND2D1)                                   0.035     0.029      0.348 r
+  n304 (net)                     2        0.002               0.000      0.348 r
+  U179/ZN (INVD1)                                   0.020     0.022      0.370 f
+  n308 (net)                     2        0.002               0.000      0.370 f
+  U431/ZN (ND2D1)                                   0.025     0.019      0.389 r
+  n307 (net)                     1        0.001               0.000      0.389 r
+  U432/ZN (OAI31D1)                                 0.039     0.038      0.428 f
+  n318 (net)                     1        0.001               0.000      0.428 f
+  U119/ZN (NR2XD0)                                  0.038     0.033      0.460 r
+  N44 (net)                      1        0.001               0.000      0.460 r
+  s_reg_9_/D (DFQD2)                                0.038     0.000      0.460 r
+  data arrival time                                                      0.460
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  s_reg_9_/CP (DFQD2)                                         0.000      0.500 r
+  library setup time                                         -0.034      0.466
+  data required time                                                     0.466
+  -------------------------------------------------------------------------------
+  data required time                                                     0.466
+  data arrival time                                                     -0.460
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.006
+
+
+  Startpoint: br_reg_5_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: s_reg_5_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  br_reg_5_/CP (DFQD1)                              0.000     0.000      0.000 r
+  br_reg_5_/Q (DFQD1)                               0.035     0.135      0.135 f
+  br[5] (net)                    5        0.004               0.000      0.135 f
+  U232/ZN (INVD0)                                   0.054     0.042      0.177 r
+  n256 (net)                     2        0.002               0.000      0.177 r
+  U269/ZN (XNR2D0)                                  0.050     0.095      0.273 f
+  n239 (net)                     3        0.002               0.000      0.273 f
+  U267/ZN (AOI31D0)                                 0.092     0.059      0.331 r
+  n233 (net)                     1        0.001               0.000      0.331 r
+  U291/ZN (OAI31D0)                                 0.053     0.065      0.396 f
+  n243 (net)                     1        0.001               0.000      0.396 f
+  U289/ZN (NR2D0)                                   0.068     0.056      0.452 r
+  N40 (net)                      1        0.001               0.000      0.452 r
+  s_reg_5_/D (DFQD2)                                0.068     0.000      0.452 r
+  data arrival time                                                      0.452
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  s_reg_5_/CP (DFQD2)                                         0.000      0.500 r
+  library setup time                                         -0.041      0.459
+  data required time                                                     0.459
+  -------------------------------------------------------------------------------
+  data required time                                                     0.459
+  data arrival time                                                     -0.452
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.007
+
+
+  Startpoint: br_reg_1_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: s_reg_2_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  br_reg_1_/CP (DFQD2)                              0.000     0.000      0.000 r
+  br_reg_1_/Q (DFQD2)                               0.030     0.137      0.137 f
+  br[1] (net)                    4        0.006               0.000      0.137 f
+  U410/ZN (INVD1)                                   0.020     0.020      0.158 r
+  n179 (net)                     1        0.001               0.000      0.158 r
+  U411/ZN (ND2D1)                                   0.029     0.027      0.185 f
+  n230 (net)                     2        0.002               0.000      0.185 f
+  U272/ZN (CKND2D0)                                 0.064     0.044      0.229 r
+  n320 (net)                     2        0.002               0.000      0.229 r
+  U298/ZN (CKND2D0)                                 0.052     0.049      0.278 f
+  n321 (net)                     1        0.002               0.000      0.278 f
+  U297/ZN (XNR2D0)                                  0.046     0.091      0.370 r
+  n322 (net)                     1        0.002               0.000      0.370 r
+  U295/Z (CKMUX2D0)                                 0.040     0.089      0.458 r
+  N37 (net)                      1        0.001               0.000      0.458 r
+  s_reg_2_/D (DFQD2)                                0.040     0.000      0.458 r
+  data arrival time                                                      0.458
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  s_reg_2_/CP (DFQD2)                                         0.000      0.500 r
+  library setup time                                         -0.034      0.466
+  data required time                                                     0.466
+  -------------------------------------------------------------------------------
+  data required time                                                     0.466
+  data arrival time                                                     -0.458
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.007
+
+
+  Startpoint: br_reg_1_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: s_reg_6_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  br_reg_1_/CP (DFQD2)                              0.000     0.000      0.000 r
+  br_reg_1_/Q (DFQD2)                               0.030     0.137      0.137 f
+  br[1] (net)                    4        0.006               0.000      0.137 f
+  U410/ZN (INVD1)                                   0.020     0.020      0.158 r
+  n179 (net)                     1        0.001               0.000      0.158 r
+  U411/ZN (ND2D1)                                   0.029     0.027      0.185 f
+  n230 (net)                     2        0.002               0.000      0.185 f
+  U272/ZN (CKND2D0)                                 0.064     0.044      0.229 r
+  n320 (net)                     2        0.002               0.000      0.229 r
+  U187/ZN (INVD1)                                   0.030     0.032      0.261 f
+  n248 (net)                     2        0.003               0.000      0.261 f
+  U263/ZN (NR3D0)                                   0.097     0.062      0.323 r
+  n255 (net)                     1        0.002               0.000      0.323 r
+  U188/ZN (NR2D2)                                   0.035     0.028      0.351 f
+  n290 (net)                     3        0.003               0.000      0.351 f
+  U132/Z (AN2D0)                                    0.020     0.047      0.398 f
+  n265 (net)                     1        0.001               0.000      0.398 f
+  U286/ZN (NR2D0)                                   0.068     0.051      0.449 r
+  N41 (net)                      1        0.001               0.000      0.449 r
+  s_reg_6_/D (DFQD2)                                0.068     0.000      0.449 r
+  data arrival time                                                      0.449
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  s_reg_6_/CP (DFQD2)                                         0.000      0.500 r
+  library setup time                                         -0.041      0.459
+  data required time                                                     0.459
+  -------------------------------------------------------------------------------
+  data required time                                                     0.459
+  data arrival time                                                     -0.449
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.010
+
+
+  Startpoint: ar_reg_6_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: s_reg_10_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  ar_reg_6_/CP (DFQD1)                              0.000     0.000      0.000 r
+  ar_reg_6_/Q (DFQD1)                               0.061     0.126      0.126 r
+  ar[6] (net)                    5        0.006               0.000      0.126 r
+  U348/ZN (NR2D1)                                   0.025     0.028      0.154 f
+  n291 (net)                     2        0.002               0.000      0.154 f
+  U349/ZN (NR3D0)                                   0.071     0.055      0.209 r
+  n86 (net)                      1        0.001               0.000      0.209 r
+  U350/ZN (ND2D1)                                   0.041     0.042      0.251 f
+  n167 (net)                     2        0.002               0.000      0.251 f
+  U121/ZN (ND2D1)                                   0.040     0.036      0.287 r
+  n186 (net)                     3        0.003               0.000      0.287 r
+  U325/Z (AN2XD1)                                   0.030     0.052      0.339 r
+  n77 (net)                      1        0.002               0.000      0.339 r
+  U183/ZN (ND2D2)                                   0.026     0.025      0.364 f
+  n273 (net)                     3        0.003               0.000      0.364 f
+  U422/ZN (ND2D1)                                   0.021     0.019      0.383 r
+  n270 (net)                     1        0.001               0.000      0.383 r
+  U284/ZN (CKND2D0)                                 0.042     0.033      0.416 f
+  n275 (net)                     1        0.001               0.000      0.416 f
+  U169/ZN (NR2D1)                                   0.042     0.036      0.452 r
+  N45 (net)                      1        0.001               0.000      0.452 r
+  s_reg_10_/D (DFQD2)                               0.042     0.000      0.452 r
+  data arrival time                                                      0.452
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  s_reg_10_/CP (DFQD2)                                        0.000      0.500 r
+  library setup time                                         -0.035      0.465
+  data required time                                                     0.465
+  -------------------------------------------------------------------------------
+  data required time                                                     0.465
+  data arrival time                                                     -0.452
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.013
+
+
+  Startpoint: br_reg_1_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: s_reg_3_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  br_reg_1_/CP (DFQD2)                              0.000     0.000      0.000 r
+  br_reg_1_/Q (DFQD2)                               0.030     0.137      0.137 f
+  br[1] (net)                    4        0.006               0.000      0.137 f
+  U207/ZN (NR2D1)                                   0.074     0.052      0.189 r
+  n324 (net)                     2        0.003               0.000      0.189 r
+  U213/ZN (NR2D0)                                   0.031     0.035      0.224 f
+  n331 (net)                     1        0.001               0.000      0.224 f
+  U173/ZN (AOI21D1)                                 0.062     0.040      0.264 r
+  n332 (net)                     1        0.002               0.000      0.264 r
+  U435/Z (CKXOR2D1)                                 0.037     0.092      0.356 f
+  n333 (net)                     1        0.002               0.000      0.356 f
+  U293/Z (CKMUX2D0)                                 0.040     0.086      0.442 r
+  N38 (net)                      1        0.001               0.000      0.442 r
+  s_reg_3_/D (DFQD2)                                0.040     0.000      0.442 r
+  data arrival time                                                      0.442
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  s_reg_3_/CP (DFQD2)                                         0.000      0.500 r
+  library setup time                                         -0.034      0.466
+  data required time                                                     0.466
+  -------------------------------------------------------------------------------
+  data required time                                                     0.466
+  data arrival time                                                     -0.442
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.024
+
+
+  Startpoint: s_reg_17_/CP
+              (internal path startpoint clocked by clk)
+  Endpoint: s[17] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  input external delay                                        0.000      0.000 r
+  s_reg_17_/CP (DFQD2)                              0.000     0.000      0.000 r
+  s_reg_17_/Q (DFQD2)                               0.219     0.215      0.215 r
+  s[17] (net)                    1        0.050               0.000      0.215 r
+  s[17] (out)                                       0.219     0.000      0.215 r
+  data arrival time                                                      0.215
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  output external delay                                      -0.200      0.300
+  data required time                                                     0.300
+  -------------------------------------------------------------------------------
+  data required time                                                     0.300
+  data arrival time                                                     -0.215
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.085
+
+
+  Startpoint: s_reg_16_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: s[16] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  s_reg_16_/CP (DFQD2)                              0.000     0.000      0.000 r
+  s_reg_16_/Q (DFQD2)                               0.219     0.215      0.215 r
+  s[16] (net)                    1        0.050               0.000      0.215 r
+  s[16] (out)                                       0.219     0.000      0.215 r
+  data arrival time                                                      0.215
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  output external delay                                      -0.200      0.300
+  data required time                                                     0.300
+  -------------------------------------------------------------------------------
+  data required time                                                     0.300
+  data arrival time                                                     -0.215
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.085
+
+
+  Startpoint: s_reg_15_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: s[15] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  s_reg_15_/CP (DFQD2)                              0.000     0.000      0.000 r
+  s_reg_15_/Q (DFQD2)                               0.219     0.215      0.215 r
+  s[15] (net)                    1        0.050               0.000      0.215 r
+  s[15] (out)                                       0.219     0.000      0.215 r
+  data arrival time                                                      0.215
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  output external delay                                      -0.200      0.300
+  data required time                                                     0.300
+  -------------------------------------------------------------------------------
+  data required time                                                     0.300
+  data arrival time                                                     -0.215
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.085
+
+
+  Startpoint: s_reg_14_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: s[14] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  s_reg_14_/CP (DFQD2)                              0.000     0.000      0.000 r
+  s_reg_14_/Q (DFQD2)                               0.219     0.215      0.215 r
+  s[14] (net)                    1        0.050               0.000      0.215 r
+  s[14] (out)                                       0.219     0.000      0.215 r
+  data arrival time                                                      0.215
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  output external delay                                      -0.200      0.300
+  data required time                                                     0.300
+  -------------------------------------------------------------------------------
+  data required time                                                     0.300
+  data arrival time                                                     -0.215
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.085
+
+
+  Startpoint: s_reg_13_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: s[13] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  s_reg_13_/CP (DFQD2)                              0.000     0.000      0.000 r
+  s_reg_13_/Q (DFQD2)                               0.219     0.215      0.215 r
+  s[13] (net)                    1        0.050               0.000      0.215 r
+  s[13] (out)                                       0.219     0.000      0.215 r
+  data arrival time                                                      0.215
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  output external delay                                      -0.200      0.300
+  data required time                                                     0.300
+  -------------------------------------------------------------------------------
+  data required time                                                     0.300
+  data arrival time                                                     -0.215
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.085
+
+
+  Startpoint: s_reg_12_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: s[12] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  s_reg_12_/CP (DFQD2)                              0.000     0.000      0.000 r
+  s_reg_12_/Q (DFQD2)                               0.219     0.215      0.215 r
+  s[12] (net)                    1        0.050               0.000      0.215 r
+  s[12] (out)                                       0.219     0.000      0.215 r
+  data arrival time                                                      0.215
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  output external delay                                      -0.200      0.300
+  data required time                                                     0.300
+  -------------------------------------------------------------------------------
+  data required time                                                     0.300
+  data arrival time                                                     -0.215
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.085
+
+
+  Startpoint: s_reg_11_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: s[11] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  s_reg_11_/CP (DFQD2)                              0.000     0.000      0.000 r
+  s_reg_11_/Q (DFQD2)                               0.219     0.215      0.215 r
+  s[11] (net)                    1        0.050               0.000      0.215 r
+  s[11] (out)                                       0.219     0.000      0.215 r
+  data arrival time                                                      0.215
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  output external delay                                      -0.200      0.300
+  data required time                                                     0.300
+  -------------------------------------------------------------------------------
+  data required time                                                     0.300
+  data arrival time                                                     -0.215
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.085
+
+
+  Startpoint: s_reg_10_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: s[10] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  s_reg_10_/CP (DFQD2)                              0.000     0.000      0.000 r
+  s_reg_10_/Q (DFQD2)                               0.219     0.215      0.215 r
+  s[10] (net)                    1        0.050               0.000      0.215 r
+  s[10] (out)                                       0.219     0.000      0.215 r
+  data arrival time                                                      0.215
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  output external delay                                      -0.200      0.300
+  data required time                                                     0.300
+  -------------------------------------------------------------------------------
+  data required time                                                     0.300
+  data arrival time                                                     -0.215
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.085
+
+
+  Startpoint: s_reg_9_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: s[9] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  s_reg_9_/CP (DFQD2)                               0.000     0.000      0.000 r
+  s_reg_9_/Q (DFQD2)                                0.219     0.215      0.215 r
+  s[9] (net)                     1        0.050               0.000      0.215 r
+  s[9] (out)                                        0.219     0.000      0.215 r
+  data arrival time                                                      0.215
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  output external delay                                      -0.200      0.300
+  data required time                                                     0.300
+  -------------------------------------------------------------------------------
+  data required time                                                     0.300
+  data arrival time                                                     -0.215
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.085
+
+
+  Startpoint: s_reg_8_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: s[8] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  s_reg_8_/CP (DFQD2)                               0.000     0.000      0.000 r
+  s_reg_8_/Q (DFQD2)                                0.219     0.215      0.215 r
+  s[8] (net)                     1        0.050               0.000      0.215 r
+  s[8] (out)                                        0.219     0.000      0.215 r
+  data arrival time                                                      0.215
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  output external delay                                      -0.200      0.300
+  data required time                                                     0.300
+  -------------------------------------------------------------------------------
+  data required time                                                     0.300
+  data arrival time                                                     -0.215
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.085
+
+
+  Startpoint: s_reg_7_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: s[7] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  s_reg_7_/CP (DFQD2)                               0.000     0.000      0.000 r
+  s_reg_7_/Q (DFQD2)                                0.219     0.215      0.215 r
+  s[7] (net)                     1        0.050               0.000      0.215 r
+  s[7] (out)                                        0.219     0.000      0.215 r
+  data arrival time                                                      0.215
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  output external delay                                      -0.200      0.300
+  data required time                                                     0.300
+  -------------------------------------------------------------------------------
+  data required time                                                     0.300
+  data arrival time                                                     -0.215
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.085
+
+
+  Startpoint: s_reg_6_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: s[6] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  s_reg_6_/CP (DFQD2)                               0.000     0.000      0.000 r
+  s_reg_6_/Q (DFQD2)                                0.219     0.215      0.215 r
+  s[6] (net)                     1        0.050               0.000      0.215 r
+  s[6] (out)                                        0.219     0.000      0.215 r
+  data arrival time                                                      0.215
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  output external delay                                      -0.200      0.300
+  data required time                                                     0.300
+  -------------------------------------------------------------------------------
+  data required time                                                     0.300
+  data arrival time                                                     -0.215
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.085
+
+
+  Startpoint: s_reg_5_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: s[5] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  s_reg_5_/CP (DFQD2)                               0.000     0.000      0.000 r
+  s_reg_5_/Q (DFQD2)                                0.219     0.215      0.215 r
+  s[5] (net)                     1        0.050               0.000      0.215 r
+  s[5] (out)                                        0.219     0.000      0.215 r
+  data arrival time                                                      0.215
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  output external delay                                      -0.200      0.300
+  data required time                                                     0.300
+  -------------------------------------------------------------------------------
+  data required time                                                     0.300
+  data arrival time                                                     -0.215
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.085
+
+
+  Startpoint: s_reg_4_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: s[4] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  s_reg_4_/CP (DFQD2)                               0.000     0.000      0.000 r
+  s_reg_4_/Q (DFQD2)                                0.219     0.215      0.215 r
+  s[4] (net)                     1        0.050               0.000      0.215 r
+  s[4] (out)                                        0.219     0.000      0.215 r
+  data arrival time                                                      0.215
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  output external delay                                      -0.200      0.300
+  data required time                                                     0.300
+  -------------------------------------------------------------------------------
+  data required time                                                     0.300
+  data arrival time                                                     -0.215
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.085
+
+
+  Startpoint: s_reg_3_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: s[3] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  s_reg_3_/CP (DFQD2)                               0.000     0.000      0.000 r
+  s_reg_3_/Q (DFQD2)                                0.219     0.215      0.215 r
+  s[3] (net)                     1        0.050               0.000      0.215 r
+  s[3] (out)                                        0.219     0.000      0.215 r
+  data arrival time                                                      0.215
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  output external delay                                      -0.200      0.300
+  data required time                                                     0.300
+  -------------------------------------------------------------------------------
+  data required time                                                     0.300
+  data arrival time                                                     -0.215
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.085
+
+
+  Startpoint: s_reg_2_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: s[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  s_reg_2_/CP (DFQD2)                               0.000     0.000      0.000 r
+  s_reg_2_/Q (DFQD2)                                0.219     0.215      0.215 r
+  s[2] (net)                     1        0.050               0.000      0.215 r
+  s[2] (out)                                        0.219     0.000      0.215 r
+  data arrival time                                                      0.215
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  output external delay                                      -0.200      0.300
+  data required time                                                     0.300
+  -------------------------------------------------------------------------------
+  data required time                                                     0.300
+  data arrival time                                                     -0.215
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.085
+
+
+  Startpoint: s_reg_1_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: s[1] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  s_reg_1_/CP (DFQD2)                               0.000     0.000      0.000 r
+  s_reg_1_/Q (DFQD2)                                0.219     0.215      0.215 r
+  s[1] (net)                     1        0.050               0.000      0.215 r
+  s[1] (out)                                        0.219     0.000      0.215 r
+  data arrival time                                                      0.215
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  output external delay                                      -0.200      0.300
+  data required time                                                     0.300
+  -------------------------------------------------------------------------------
+  data required time                                                     0.300
+  data arrival time                                                     -0.215
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.085
+
+
+  Startpoint: s_reg_0_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: s[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  s_reg_0_/CP (DFQD2)                               0.000     0.000      0.000 r
+  s_reg_0_/Q (DFQD2)                                0.219     0.215      0.215 r
+  s[0] (net)                     1        0.050               0.000      0.215 r
+  s[0] (out)                                        0.219     0.000      0.215 r
+  data arrival time                                                      0.215
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  output external delay                                      -0.200      0.300
+  data required time                                                     0.300
+  -------------------------------------------------------------------------------
+  data required time                                                     0.300
+  data arrival time                                                     -0.215
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.085
+
+
+  Startpoint: br_reg_0_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: s_reg_1_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  br_reg_0_/CP (DFQD4)                              0.000     0.000      0.000 r
+  br_reg_0_/Q (DFQD4)                               0.025     0.119      0.119 f
+  br[0] (net)                    2        0.003               0.000      0.119 f
+  U122/ZN (ND2D2)                                   0.037     0.030      0.149 r
+  n326 (net)                     5        0.006               0.000      0.149 r
+  U412/ZN (INVD1)                                   0.019     0.021      0.171 f
+  n180 (net)                     1        0.002               0.000      0.171 f
+  U413/ZN (ND2D2)                                   0.022     0.017      0.188 r
+  n319 (net)                     3        0.002               0.000      0.188 r
+  U300/ZN (CKND2D0)                                 0.046     0.037      0.224 f
+  n232 (net)                     2        0.002               0.000      0.224 f
+  U299/ZN (OAI31D0)                                 0.137     0.092      0.317 r
+  N36 (net)                      1        0.001               0.000      0.317 r
+  s_reg_1_/D (DFQD2)                                0.137     0.000      0.317 r
+  data arrival time                                                      0.317
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  s_reg_1_/CP (DFQD2)                                         0.000      0.500 r
+  library setup time                                         -0.051      0.449
+  data required time                                                     0.449
+  -------------------------------------------------------------------------------
+  data required time                                                     0.449
+  data arrival time                                                     -0.317
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.132
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: s_reg_0_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  input external delay                                        0.200      0.200 f
+  reset (in)                                        0.000     0.000      0.200 f
+  reset (net)                   44        0.042               0.000      0.200 f
+  U302/ZN (NR2D0)                                   0.053     0.037      0.237 r
+  n228 (net)                     1        0.001               0.000      0.237 r
+  U301/Z (OA21D0)                                   0.038     0.072      0.309 r
+  N35 (net)                      1        0.001               0.000      0.309 r
+  s_reg_0_/D (DFQD2)                                0.038     0.000      0.309 r
+  data arrival time                                                      0.309
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  s_reg_0_/CP (DFQD2)                                         0.000      0.500 r
+  library setup time                                         -0.034      0.466
+  data required time                                                     0.466
+  -------------------------------------------------------------------------------
+  data required time                                                     0.466
+  data arrival time                                                     -0.309
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.157
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: br_reg_8_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  input external delay                                        0.200      0.200 f
+  reset (in)                                        0.000     0.000      0.200 f
+  reset (net)                   44        0.042               0.000      0.200 f
+  U140/ZN (NR2XD0)                                  0.080     0.048      0.248 r
+  n343 (net)                     2        0.004               0.000      0.248 r
+  br_reg_8_/D (DFQD4)                               0.080     0.000      0.248 r
+  data arrival time                                                      0.248
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  br_reg_8_/CP (DFQD4)                                        0.000      0.500 r
+  library setup time                                         -0.048      0.452
+  data required time                                                     0.452
+  -------------------------------------------------------------------------------
+  data required time                                                     0.452
+  data arrival time                                                     -0.248
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.205
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: br_reg_4_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  input external delay                                        0.200      0.200 f
+  reset (in)                                        0.000     0.000      0.200 f
+  reset (net)                   44        0.042               0.000      0.200 f
+  U135/ZN (NR2XD0)                                  0.080     0.048      0.248 r
+  n347 (net)                     2        0.004               0.000      0.248 r
+  br_reg_4_/D (DFQD1)                               0.080     0.000      0.248 r
+  data arrival time                                                      0.248
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  br_reg_4_/CP (DFQD1)                                        0.000      0.500 r
+  library setup time                                         -0.043      0.457
+  data required time                                                     0.457
+  -------------------------------------------------------------------------------
+  data required time                                                     0.457
+  data arrival time                                                     -0.248
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.209
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: br_reg_13_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  input external delay                                        0.200      0.200 f
+  reset (in)                                        0.000     0.000      0.200 f
+  reset (net)                   44        0.042               0.000      0.200 f
+  U315/ZN (NR2D0)                                   0.068     0.045      0.245 r
+  n338 (net)                     1        0.001               0.000      0.245 r
+  br_reg_13_/D (DFQD1)                              0.068     0.000      0.245 r
+  data arrival time                                                      0.245
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  br_reg_13_/CP (DFQD1)                                       0.000      0.500 r
+  library setup time                                         -0.040      0.460
+  data required time                                                     0.460
+  -------------------------------------------------------------------------------
+  data required time                                                     0.460
+  data arrival time                                                     -0.245
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.214
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: br_reg_10_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  input external delay                                        0.200      0.200 f
+  reset (in)                                        0.000     0.000      0.200 f
+  reset (net)                   44        0.042               0.000      0.200 f
+  U310/ZN (NR2D0)                                   0.068     0.045      0.245 r
+  n341 (net)                     1        0.001               0.000      0.245 r
+  br_reg_10_/D (DFQD1)                              0.068     0.000      0.245 r
+  data arrival time                                                      0.245
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  br_reg_10_/CP (DFQD1)                                       0.000      0.500 r
+  library setup time                                         -0.040      0.460
+  data required time                                                     0.460
+  -------------------------------------------------------------------------------
+  data required time                                                     0.460
+  data arrival time                                                     -0.245
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.215
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: br_reg_7_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  input external delay                                        0.200      0.200 f
+  reset (in)                                        0.000     0.000      0.200 f
+  reset (net)                   44        0.042               0.000      0.200 f
+  U313/ZN (NR2D0)                                   0.068     0.045      0.245 r
+  n344 (net)                     1        0.001               0.000      0.245 r
+  br_reg_7_/D (DFQD1)                               0.068     0.000      0.245 r
+  data arrival time                                                      0.245
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  br_reg_7_/CP (DFQD1)                                        0.000      0.500 r
+  library setup time                                         -0.040      0.460
+  data required time                                                     0.460
+  -------------------------------------------------------------------------------
+  data required time                                                     0.460
+  data arrival time                                                     -0.245
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.215
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: br_reg_11_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  input external delay                                        0.200      0.200 f
+  reset (in)                                        0.000     0.000      0.200 f
+  reset (net)                   44        0.042               0.000      0.200 f
+  U309/ZN (NR2D0)                                   0.068     0.045      0.245 r
+  n340 (net)                     1        0.001               0.000      0.245 r
+  br_reg_11_/D (DFQD1)                              0.068     0.000      0.245 r
+  data arrival time                                                      0.245
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  br_reg_11_/CP (DFQD1)                                       0.000      0.500 r
+  library setup time                                         -0.040      0.460
+  data required time                                                     0.460
+  -------------------------------------------------------------------------------
+  data required time                                                     0.460
+  data arrival time                                                     -0.245
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.215
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: br_reg_15_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  input external delay                                        0.200      0.200 f
+  reset (in)                                        0.000     0.000      0.200 f
+  reset (net)                   44        0.042               0.000      0.200 f
+  U143/ZN (NR2XD0)                                  0.072     0.043      0.243 r
+  n336 (net)                     3        0.003               0.000      0.243 r
+  br_reg_15_/D (DFQD1)                              0.072     0.000      0.243 r
+  data arrival time                                                      0.243
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  br_reg_15_/CP (DFQD1)                                       0.000      0.500 r
+  library setup time                                         -0.041      0.459
+  data required time                                                     0.459
+  -------------------------------------------------------------------------------
+  data required time                                                     0.459
+  data arrival time                                                     -0.243
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.215
+
+
+  Startpoint: a[8] (input port clocked by clk)
+  Endpoint: ar_reg_8_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  input external delay                                        0.200      0.200 r
+  a[8] (in)                                         0.000     0.000      0.200 r
+  a[8] (net)                     1        0.001               0.000      0.200 r
+  U305/ZN (INVD0)                                   0.018     0.013      0.213 f
+  n222 (net)                     1        0.001               0.000      0.213 f
+  U158/ZN (NR2XD0)                                  0.038     0.028      0.241 r
+  N11 (net)                      1        0.001               0.000      0.241 r
+  ar_reg_8_/D (DFQD4)                               0.038     0.000      0.241 r
+  data arrival time                                                      0.241
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  ar_reg_8_/CP (DFQD4)                                        0.000      0.500 r
+  library setup time                                         -0.037      0.463
+  data required time                                                     0.463
+  -------------------------------------------------------------------------------
+  data required time                                                     0.463
+  data arrival time                                                     -0.241
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.222
+
+
+  Startpoint: a[0] (input port clocked by clk)
+  Endpoint: ar_reg_0_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  input external delay                                        0.200      0.200 r
+  a[0] (in)                                         0.000     0.000      0.200 r
+  a[0] (net)                     1        0.001               0.000      0.200 r
+  U316/ZN (INVD0)                                   0.018     0.013      0.213 f
+  n212 (net)                     1        0.001               0.000      0.213 f
+  U163/ZN (NR2XD0)                                  0.038     0.028      0.241 r
+  N3 (net)                       1        0.001               0.000      0.241 r
+  ar_reg_0_/D (DFQD4)                               0.038     0.000      0.241 r
+  data arrival time                                                      0.241
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  ar_reg_0_/CP (DFQD4)                                        0.000      0.500 r
+  library setup time                                         -0.037      0.463
+  data required time                                                     0.463
+  -------------------------------------------------------------------------------
+  data required time                                                     0.463
+  data arrival time                                                     -0.241
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.222
+
+
+  Startpoint: a[1] (input port clocked by clk)
+  Endpoint: ar_reg_1_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  input external delay                                        0.200      0.200 r
+  a[1] (in)                                         0.000     0.000      0.200 r
+  a[1] (net)                     1        0.001               0.000      0.200 r
+  U306/ZN (INVD0)                                   0.018     0.013      0.213 f
+  n221 (net)                     1        0.001               0.000      0.213 f
+  U156/ZN (NR2XD0)                                  0.038     0.028      0.241 r
+  N4 (net)                       1        0.001               0.000      0.241 r
+  ar_reg_1_/D (DFQD2)                               0.038     0.000      0.241 r
+  data arrival time                                                      0.241
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  ar_reg_1_/CP (DFQD2)                                        0.000      0.500 r
+  library setup time                                         -0.034      0.466
+  data required time                                                     0.466
+  -------------------------------------------------------------------------------
+  data required time                                                     0.466
+  data arrival time                                                     -0.241
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.225
+
+
+  Startpoint: a[15] (input port clocked by clk)
+  Endpoint: ar_reg_15_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  input external delay                                        0.200      0.200 r
+  a[15] (in)                                        0.000     0.000      0.200 r
+  a[15] (net)                    1        0.001               0.000      0.200 r
+  U322/ZN (INVD0)                                   0.018     0.013      0.213 f
+  n217 (net)                     1        0.001               0.000      0.213 f
+  U150/ZN (NR2XD0)                                  0.038     0.028      0.241 r
+  N18 (net)                      1        0.001               0.000      0.241 r
+  ar_reg_15_/D (DFQD1)                              0.038     0.000      0.241 r
+  data arrival time                                                      0.241
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  ar_reg_15_/CP (DFQD1)                                       0.000      0.500 r
+  library setup time                                         -0.033      0.467
+  data required time                                                     0.467
+  -------------------------------------------------------------------------------
+  data required time                                                     0.467
+  data arrival time                                                     -0.241
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.226
+
+
+  Startpoint: a[14] (input port clocked by clk)
+  Endpoint: ar_reg_14_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  input external delay                                        0.200      0.200 r
+  a[14] (in)                                        0.000     0.000      0.200 r
+  a[14] (net)                    1        0.001               0.000      0.200 r
+  U321/ZN (INVD0)                                   0.018     0.013      0.213 f
+  n210 (net)                     1        0.001               0.000      0.213 f
+  U148/ZN (NR2XD0)                                  0.038     0.028      0.241 r
+  N17 (net)                      1        0.001               0.000      0.241 r
+  ar_reg_14_/D (DFQD1)                              0.038     0.000      0.241 r
+  data arrival time                                                      0.241
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  ar_reg_14_/CP (DFQD1)                                       0.000      0.500 r
+  library setup time                                         -0.033      0.467
+  data required time                                                     0.467
+  -------------------------------------------------------------------------------
+  data required time                                                     0.467
+  data arrival time                                                     -0.241
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.226
+
+
+  Startpoint: a[13] (input port clocked by clk)
+  Endpoint: ar_reg_13_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  input external delay                                        0.200      0.200 r
+  a[13] (in)                                        0.000     0.000      0.200 r
+  a[13] (net)                    1        0.001               0.000      0.200 r
+  U320/ZN (INVD0)                                   0.018     0.013      0.213 f
+  n215 (net)                     1        0.001               0.000      0.213 f
+  U161/ZN (NR2XD0)                                  0.038     0.028      0.241 r
+  N16 (net)                      1        0.001               0.000      0.241 r
+  ar_reg_13_/D (DFQD1)                              0.038     0.000      0.241 r
+  data arrival time                                                      0.241
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  ar_reg_13_/CP (DFQD1)                                       0.000      0.500 r
+  library setup time                                         -0.033      0.467
+  data required time                                                     0.467
+  -------------------------------------------------------------------------------
+  data required time                                                     0.467
+  data arrival time                                                     -0.241
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.226
+
+
+  Startpoint: a[11] (input port clocked by clk)
+  Endpoint: ar_reg_11_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  input external delay                                        0.200      0.200 r
+  a[11] (in)                                        0.000     0.000      0.200 r
+  a[11] (net)                    1        0.001               0.000      0.200 r
+  U319/ZN (INVD0)                                   0.018     0.013      0.213 f
+  n213 (net)                     1        0.001               0.000      0.213 f
+  U155/ZN (NR2XD0)                                  0.038     0.028      0.241 r
+  N14 (net)                      1        0.001               0.000      0.241 r
+  ar_reg_11_/D (DFQD1)                              0.038     0.000      0.241 r
+  data arrival time                                                      0.241
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  ar_reg_11_/CP (DFQD1)                                       0.000      0.500 r
+  library setup time                                         -0.033      0.467
+  data required time                                                     0.467
+  -------------------------------------------------------------------------------
+  data required time                                                     0.467
+  data arrival time                                                     -0.241
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.226
+
+
+  Startpoint: a[7] (input port clocked by clk)
+  Endpoint: ar_reg_7_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  input external delay                                        0.200      0.200 r
+  a[7] (in)                                         0.000     0.000      0.200 r
+  a[7] (net)                     1        0.001               0.000      0.200 r
+  U317/ZN (INVD0)                                   0.018     0.013      0.213 f
+  n211 (net)                     1        0.001               0.000      0.213 f
+  U159/ZN (NR2XD0)                                  0.038     0.028      0.241 r
+  N10 (net)                      1        0.001               0.000      0.241 r
+  ar_reg_7_/D (DFQD1)                               0.038     0.000      0.241 r
+  data arrival time                                                      0.241
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  ar_reg_7_/CP (DFQD1)                                        0.000      0.500 r
+  library setup time                                         -0.033      0.467
+  data required time                                                     0.467
+  -------------------------------------------------------------------------------
+  data required time                                                     0.467
+  data arrival time                                                     -0.241
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.226
+
+
+  Startpoint: a[5] (input port clocked by clk)
+  Endpoint: ar_reg_5_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  input external delay                                        0.200      0.200 r
+  a[5] (in)                                         0.000     0.000      0.200 r
+  a[5] (net)                     1        0.001               0.000      0.200 r
+  U279/ZN (INVD0)                                   0.018     0.013      0.213 f
+  n225 (net)                     1        0.001               0.000      0.213 f
+  U153/ZN (NR2XD0)                                  0.038     0.028      0.241 r
+  N8 (net)                       1        0.001               0.000      0.241 r
+  ar_reg_5_/D (DFQD1)                               0.038     0.000      0.241 r
+  data arrival time                                                      0.241
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  ar_reg_5_/CP (DFQD1)                                        0.000      0.500 r
+  library setup time                                         -0.033      0.467
+  data required time                                                     0.467
+  -------------------------------------------------------------------------------
+  data required time                                                     0.467
+  data arrival time                                                     -0.241
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.226
+
+
+  Startpoint: a[4] (input port clocked by clk)
+  Endpoint: ar_reg_4_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  input external delay                                        0.200      0.200 r
+  a[4] (in)                                         0.000     0.000      0.200 r
+  a[4] (net)                     1        0.001               0.000      0.200 r
+  U308/ZN (INVD0)                                   0.018     0.013      0.213 f
+  n220 (net)                     1        0.001               0.000      0.213 f
+  U149/ZN (NR2XD0)                                  0.038     0.028      0.241 r
+  N7 (net)                       1        0.001               0.000      0.241 r
+  ar_reg_4_/D (DFQD1)                               0.038     0.000      0.241 r
+  data arrival time                                                      0.241
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  ar_reg_4_/CP (DFQD1)                                        0.000      0.500 r
+  library setup time                                         -0.033      0.467
+  data required time                                                     0.467
+  -------------------------------------------------------------------------------
+  data required time                                                     0.467
+  data arrival time                                                     -0.241
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.226
+
+
+  Startpoint: a[10] (input port clocked by clk)
+  Endpoint: ar_reg_10_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  input external delay                                        0.200      0.200 r
+  a[10] (in)                                        0.000     0.000      0.200 r
+  a[10] (net)                    1        0.001               0.000      0.200 r
+  U307/ZN (INVD0)                                   0.018     0.013      0.213 f
+  n223 (net)                     1        0.001               0.000      0.213 f
+  U152/ZN (NR2XD0)                                  0.038     0.028      0.241 r
+  N13 (net)                      1        0.001               0.000      0.241 r
+  ar_reg_10_/D (DFQD1)                              0.038     0.000      0.241 r
+  data arrival time                                                      0.241
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  ar_reg_10_/CP (DFQD1)                                       0.000      0.500 r
+  library setup time                                         -0.033      0.467
+  data required time                                                     0.467
+  -------------------------------------------------------------------------------
+  data required time                                                     0.467
+  data arrival time                                                     -0.241
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.226
+
+
+  Startpoint: a[12] (input port clocked by clk)
+  Endpoint: ar_reg_12_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  input external delay                                        0.200      0.200 r
+  a[12] (in)                                        0.000     0.000      0.200 r
+  a[12] (net)                    1        0.001               0.000      0.200 r
+  U282/ZN (INVD0)                                   0.018     0.013      0.213 f
+  n216 (net)                     1        0.001               0.000      0.213 f
+  U157/ZN (NR2XD0)                                  0.038     0.028      0.241 r
+  N15 (net)                      1        0.001               0.000      0.241 r
+  ar_reg_12_/D (DFQD1)                              0.038     0.000      0.241 r
+  data arrival time                                                      0.241
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  ar_reg_12_/CP (DFQD1)                                       0.000      0.500 r
+  library setup time                                         -0.033      0.467
+  data required time                                                     0.467
+  -------------------------------------------------------------------------------
+  data required time                                                     0.467
+  data arrival time                                                     -0.241
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.226
+
+
+  Startpoint: a[6] (input port clocked by clk)
+  Endpoint: ar_reg_6_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  input external delay                                        0.200      0.200 r
+  a[6] (in)                                         0.000     0.000      0.200 r
+  a[6] (net)                     1        0.001               0.000      0.200 r
+  U280/ZN (INVD0)                                   0.018     0.013      0.213 f
+  n218 (net)                     1        0.001               0.000      0.213 f
+  U162/ZN (NR2XD0)                                  0.038     0.028      0.241 r
+  N9 (net)                       1        0.001               0.000      0.241 r
+  ar_reg_6_/D (DFQD1)                               0.038     0.000      0.241 r
+  data arrival time                                                      0.241
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  ar_reg_6_/CP (DFQD1)                                        0.000      0.500 r
+  library setup time                                         -0.033      0.467
+  data required time                                                     0.467
+  -------------------------------------------------------------------------------
+  data required time                                                     0.467
+  data arrival time                                                     -0.241
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.226
+
+
+  Startpoint: a[9] (input port clocked by clk)
+  Endpoint: ar_reg_9_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  input external delay                                        0.200      0.200 r
+  a[9] (in)                                         0.000     0.000      0.200 r
+  a[9] (net)                     1        0.001               0.000      0.200 r
+  U318/ZN (INVD0)                                   0.018     0.013      0.213 f
+  n224 (net)                     1        0.001               0.000      0.213 f
+  U154/ZN (NR2XD0)                                  0.038     0.028      0.241 r
+  N12 (net)                      1        0.001               0.000      0.241 r
+  ar_reg_9_/D (DFQD1)                               0.038     0.000      0.241 r
+  data arrival time                                                      0.241
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  ar_reg_9_/CP (DFQD1)                                        0.000      0.500 r
+  library setup time                                         -0.033      0.467
+  data required time                                                     0.467
+  -------------------------------------------------------------------------------
+  data required time                                                     0.467
+  data arrival time                                                     -0.241
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.226
+
+
+  Startpoint: a[3] (input port clocked by clk)
+  Endpoint: ar_reg_3_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  input external delay                                        0.200      0.200 r
+  a[3] (in)                                         0.000     0.000      0.200 r
+  a[3] (net)                     1        0.001               0.000      0.200 r
+  U214/ZN (INVD0)                                   0.018     0.013      0.213 f
+  n214 (net)                     1        0.001               0.000      0.213 f
+  U151/ZN (NR2XD0)                                  0.038     0.028      0.241 r
+  N6 (net)                       1        0.001               0.000      0.241 r
+  ar_reg_3_/D (DFQD1)                               0.038     0.000      0.241 r
+  data arrival time                                                      0.241
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  ar_reg_3_/CP (DFQD1)                                        0.000      0.500 r
+  library setup time                                         -0.033      0.467
+  data required time                                                     0.467
+  -------------------------------------------------------------------------------
+  data required time                                                     0.467
+  data arrival time                                                     -0.241
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.226
+
+
+  Startpoint: a[2] (input port clocked by clk)
+  Endpoint: ar_reg_2_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  input external delay                                        0.200      0.200 r
+  a[2] (in)                                         0.000     0.000      0.200 r
+  a[2] (net)                     1        0.001               0.000      0.200 r
+  U304/ZN (INVD0)                                   0.018     0.013      0.213 f
+  n219 (net)                     1        0.001               0.000      0.213 f
+  U160/ZN (NR2XD0)                                  0.038     0.028      0.241 r
+  N5 (net)                       1        0.001               0.000      0.241 r
+  ar_reg_2_/D (DFQD1)                               0.038     0.000      0.241 r
+  data arrival time                                                      0.241
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  ar_reg_2_/CP (DFQD1)                                        0.000      0.500 r
+  library setup time                                         -0.033      0.467
+  data required time                                                     0.467
+  -------------------------------------------------------------------------------
+  data required time                                                     0.467
+  data arrival time                                                     -0.241
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.226
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: br_reg_0_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  input external delay                                        0.200      0.200 f
+  reset (in)                                        0.000     0.000      0.200 f
+  reset (net)                   44        0.042               0.000      0.200 f
+  U142/ZN (NR2XD0)                                  0.051     0.032      0.232 r
+  N19 (net)                      2        0.002               0.000      0.232 r
+  br_reg_0_/D (DFQD4)                               0.051     0.000      0.232 r
+  data arrival time                                                      0.232
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  br_reg_0_/CP (DFQD4)                                        0.000      0.500 r
+  library setup time                                         -0.041      0.459
+  data required time                                                     0.459
+  -------------------------------------------------------------------------------
+  data required time                                                     0.459
+  data arrival time                                                     -0.232
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.227
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: br_reg_1_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  input external delay                                        0.200      0.200 f
+  reset (in)                                        0.000     0.000      0.200 f
+  reset (net)                   44        0.042               0.000      0.200 f
+  U144/ZN (NR2XD0)                                  0.051     0.032      0.232 r
+  n350 (net)                     2        0.002               0.000      0.232 r
+  br_reg_1_/D (DFQD2)                               0.051     0.000      0.232 r
+  data arrival time                                                      0.232
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  br_reg_1_/CP (DFQD2)                                        0.000      0.500 r
+  library setup time                                         -0.037      0.463
+  data required time                                                     0.463
+  -------------------------------------------------------------------------------
+  data required time                                                     0.463
+  data arrival time                                                     -0.232
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.230
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: br_reg_3_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  input external delay                                        0.200      0.200 f
+  reset (in)                                        0.000     0.000      0.200 f
+  reset (net)                   44        0.042               0.000      0.200 f
+  U139/ZN (NR2XD0)                                  0.051     0.032      0.232 r
+  n348 (net)                     2        0.002               0.000      0.232 r
+  br_reg_3_/D (DFQD1)                               0.051     0.000      0.232 r
+  data arrival time                                                      0.232
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  br_reg_3_/CP (DFQD1)                                        0.000      0.500 r
+  library setup time                                         -0.036      0.464
+  data required time                                                     0.464
+  -------------------------------------------------------------------------------
+  data required time                                                     0.464
+  data arrival time                                                     -0.232
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.231
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: br_reg_2_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  input external delay                                        0.200      0.200 f
+  reset (in)                                        0.000     0.000      0.200 f
+  reset (net)                   44        0.042               0.000      0.200 f
+  U134/ZN (NR2XD0)                                  0.051     0.032      0.232 r
+  n349 (net)                     2        0.002               0.000      0.232 r
+  br_reg_2_/D (DFQD1)                               0.051     0.000      0.232 r
+  data arrival time                                                      0.232
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  br_reg_2_/CP (DFQD1)                                        0.000      0.500 r
+  library setup time                                         -0.036      0.464
+  data required time                                                     0.464
+  -------------------------------------------------------------------------------
+  data required time                                                     0.464
+  data arrival time                                                     -0.232
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.231
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: br_reg_14_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  input external delay                                        0.200      0.200 f
+  reset (in)                                        0.000     0.000      0.200 f
+  reset (net)                   44        0.042               0.000      0.200 f
+  U146/ZN (NR2XD0)                                  0.038     0.025      0.225 r
+  n337 (net)                     1        0.001               0.000      0.225 r
+  br_reg_14_/D (DFQD1)                              0.038     0.000      0.225 r
+  data arrival time                                                      0.225
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  br_reg_14_/CP (DFQD1)                                       0.000      0.500 r
+  library setup time                                         -0.033      0.467
+  data required time                                                     0.467
+  -------------------------------------------------------------------------------
+  data required time                                                     0.467
+  data arrival time                                                     -0.225
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.242
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: br_reg_6_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  input external delay                                        0.200      0.200 f
+  reset (in)                                        0.000     0.000      0.200 f
+  reset (net)                   44        0.042               0.000      0.200 f
+  U141/ZN (NR2XD0)                                  0.038     0.025      0.225 r
+  n345 (net)                     1        0.001               0.000      0.225 r
+  br_reg_6_/D (DFQD1)                               0.038     0.000      0.225 r
+  data arrival time                                                      0.225
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  br_reg_6_/CP (DFQD1)                                        0.000      0.500 r
+  library setup time                                         -0.033      0.467
+  data required time                                                     0.467
+  -------------------------------------------------------------------------------
+  data required time                                                     0.467
+  data arrival time                                                     -0.225
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.242
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: br_reg_5_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  input external delay                                        0.200      0.200 f
+  reset (in)                                        0.000     0.000      0.200 f
+  reset (net)                   44        0.042               0.000      0.200 f
+  U138/ZN (NR2XD0)                                  0.038     0.025      0.225 r
+  n346 (net)                     1        0.001               0.000      0.225 r
+  br_reg_5_/D (DFQD1)                               0.038     0.000      0.225 r
+  data arrival time                                                      0.225
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  br_reg_5_/CP (DFQD1)                                        0.000      0.500 r
+  library setup time                                         -0.033      0.467
+  data required time                                                     0.467
+  -------------------------------------------------------------------------------
+  data required time                                                     0.467
+  data arrival time                                                     -0.225
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.242
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: br_reg_12_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  input external delay                                        0.200      0.200 f
+  reset (in)                                        0.000     0.000      0.200 f
+  reset (net)                   44        0.042               0.000      0.200 f
+  U145/ZN (NR2XD0)                                  0.038     0.025      0.225 r
+  n339 (net)                     1        0.001               0.000      0.225 r
+  br_reg_12_/D (DFQD1)                              0.038     0.000      0.225 r
+  data arrival time                                                      0.225
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  br_reg_12_/CP (DFQD1)                                       0.000      0.500 r
+  library setup time                                         -0.033      0.467
+  data required time                                                     0.467
+  -------------------------------------------------------------------------------
+  data required time                                                     0.467
+  data arrival time                                                     -0.225
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.242
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: br_reg_9_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir4_optimized     ZeroWireload          tcbn65gpluswc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  input external delay                                        0.200      0.200 f
+  reset (in)                                        0.000     0.000      0.200 f
+  reset (net)                   44        0.042               0.000      0.200 f
+  U136/ZN (NR2XD0)                                  0.038     0.025      0.225 r
+  n342 (net)                     1        0.001               0.000      0.225 r
+  br_reg_9_/D (DFQD1)                               0.038     0.000      0.225 r
+  data arrival time                                                      0.225
+
+  clock clk (rise edge)                                       0.500      0.500
+  clock network delay (ideal)                                 0.000      0.500
+  br_reg_9_/CP (DFQD1)                                        0.000      0.500 r
+  library setup time                                         -0.033      0.467
+  data required time                                                     0.467
+  -------------------------------------------------------------------------------
+  data required time                                                     0.467
+  data arrival time                                                     -0.225
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.242
+
+
+1
